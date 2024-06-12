@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<head>
+		<title>Yerih Yumi Laundry</title>
+<style>
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+}
+
+header{
+font-family: Tahoma, sans-serif;
+}
+
+
+label.logo{
+color: white;			
+font-size: 30px;			
+line-height: 60px;						
+font-weight: bold;			
+margin: 0 20px;
+}
+
+
+
+nav {
+background-color: #9ADE7B;
+color: white;
+padding: 10px 20px;
+height: 80px;
+width: 100%;
+}
+
+h2{
+	font-weight: bold;
+	font-size: 30px;
+	color: black;
+	font-family: Tahoma, sans-serif;
+	margin: 30px 20px;
+}
+
+label.back a{
+	color: white;
+	background-color: #609966;
+	padding: 5px;
+	border-radius: 3px;
+	font-family: Tahoma, sans-serif;
+	position: absolute; 
+	top: 90px;
+	margin-left: 10px;
+
+}
+
+
+.regbox{
+	background-color: #9ADE7B;
+	height: 250px;
+	border-radius: 5px;
+	filter: drop-shadow(5px 5px 15px #434242);
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+}
+
+.regbox label{
+	font-weight: bold;
+}
+
+h2{
+    font-weight: bold;
+	text-transform: uppercase;
+    font-family: Tahoma, sans-serif;
+    color: #609966;
+    margin-top: 10px;
+	margin-bottom: 15px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+form{
+    margin-top: 30px;
+}
+
+.regbox{
+	font-size: 15px;
+	color: White; 
+	font-family: Tahoma, sans-serif;
+	padding: 20px;
+}
+
+.regbox input[type="text"] {
+	border: none;
+	border-radius: 3px;
+	background-color: white;
+	width: 100%;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 0;
+	margin-left: 0;
+	padding: 5px;
+}
+
+.regbox input[type="submit"]{
+	height: 30px;
+	width: 100%;
+	background-color: #609966;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	filter: drop-shadow(5px 5px 2px #434242);
+	border-radius: 5px;
+    
+}
+
+.regbox input[type="submit"]:hover{
+	opacity: 0.8;
+}
+</style>
+</head>
+<header>
+	<nav>
+		<label class="logo">Yerih Yumi Laundry Shop</label>
+	</nav>
+</header>
+<body>
+	<label class="back"><a href="sales.php">back</a></label>
+    <h2 style="text-align: center;">DELETE SALES RECORD</h2>
+    <div class="regbox">
+        <form action="salesdelete.php" method="post" onsubmit="return confirm('are you sure you want to delete this record?');">
+           
+			<label>ID:</label><br>
+            <input type="text" id="userid" name="userid"><br>
+            <center><input type="submit" id="submit" name="submit" value="delete"></center>
+        </form>
+
+
+    
+    </div>
+</body>
+
+
+</html>

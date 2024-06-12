@@ -1,0 +1,436 @@
+<!DOCTYPE HTML>
+	<head>
+<title>Yerih Yumi Laundry</title>
+
+<!-- 
+	navcolor- #9ADE7B
+	navhover- #609966
+
+comments for editing:
+	di pa final yung font at colors
+
+filter: blur(2px);
+ 
+
+
+.loginbox{
+	background-color: green;
+	width: 50px; 
+	height: 100px;
+	border-radius: 2px;
+}
+
+.flexcon{
+	display: flex;
+	flex-wrap: no wrap;
+	
+}
+
+	flex: 50%;
+
+-->
+
+<style>
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+
+}
+
+header{
+	font-family: Tahoma, sans-serif;
+}
+
+
+label.logo{
+	color: white;
+	font-size: 30px;
+	line-height: 60px;
+	font-weight: bold;
+	margin: 0 20px;
+	
+}
+
+label.logo a{
+	color: white;
+}
+
+nav {
+	background-color: #9ADE7B;
+	color: white;
+	padding: 10px 20px;
+	height: 80px;
+	width: 100%;
+    }
+
+nav ul{
+	float: right;
+	margin-right: 10px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 60px;
+	margin: 0 10px;
+	padding: 0 20px;
+	border-radius: 10px;
+}
+
+nav ul li a{
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav ul li:hover{
+	background: #609966;
+	transition: .5s;
+}
+
+.flexcon{
+	margin-bottom: 100px;
+}
+
+.leftcon{
+	margin-top: 60px;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-left: 60px;
+}
+
+.cloud{
+	margin-top: 80px;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-left: -50px;	
+}
+
+.girl{
+	margin-top: -200px;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-left: -80px;
+}
+
+.bubble{
+	margin-top: -440px;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-left: 300px;
+}
+
+
+
+.loginbox{
+	background-color: #9ADE7B;
+	width: 350px; 
+	height: 450px;
+	border-radius: 5px;
+	margin-top: -220px;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-left: 830px;
+	filter: drop-shadow(5px 5px 15px #434242);
+}
+
+.loginbox h1{
+	font-size: 20px;
+	color: White; 
+	font-family: Tahoma, sans-serif;
+	padding: 20px;
+
+}
+
+.loginform{
+	font-size: 15px;
+	color: White; 
+	font-family: Tahoma, sans-serif;
+	padding: 20px;
+}
+
+
+
+.loginform input[type="text"] {
+	border: none;
+	border-bottom: 1.5px solid #609966;
+	background-color: transparent;
+	width: 100%;
+	align-items: center;
+	margin-top:0;
+	margin-bottom: 10px;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.loginform input[type="Password"] {
+	border: none;
+	border-bottom: 1.5px solid #609966;
+	background-color: transparent;
+	width: 100%;
+	align-items: center;
+	margin-top: 0;
+	margin-bottom: 20px;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.loginform input[type="submit"]{
+	height: 30px;
+	width: 100%;
+	background-color: #609966;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	filter: drop-shadow(5px 5px 2px #434242);
+	border-radius: 5px;
+}
+
+.loginform label{
+	font-weight: bold;
+}
+
+.loginform input[type="submit"]:hover{
+	opacity: 0.8;
+}
+
+.create p a{
+	color:#609966;
+}
+
+.admin a{
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	
+}
+
+.admin a:hover{
+	color: #609966;
+	transition: .2s;
+}
+
+.line{
+	background-color: #9ADE7B;
+	height: 30px;
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.about{
+	color:#609966;
+	font-family: Tahoma, sans-serif;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-right: 0;
+	padding-left: 100px;
+}
+
+.about h1{
+	margin-bottom: 5px;
+}
+
+.about img{
+	margin-top: -335px;
+	margin-bottom: 0;
+	margin-right: 100px;
+	margin-left: 0;
+	border-radius: 5px;
+	filter: drop-shadow(5px 5px 15px #434242);
+}
+
+.serv h1{
+	font-family: Tahoma, sans-serif;
+  	color: #609966;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	margin-right: 0;
+	margin-left: 100px;
+}
+
+.flex-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 100px;
+}
+
+.flex-container > div{
+  	background-color: #F1F1F1;
+  	border-radius: 30px;
+  	padding: -20px;
+  	width: 50%;
+	margin: 10px;
+  	text-align: center;
+  	line-height: 75px;
+	transition: transform .2s;
+}
+
+.flex-container > div:hover{
+	transform: scale(1.05);
+}
+
+.flex-container > div h3{
+	margin-top: -70px;
+	font-size: 25px;
+  	font-family: Tahoma, sans-serif;
+  	color: #609966;
+}
+
+.scroll{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: #609966;
+	border: black 5px;
+	border-radius: 5px;
+	bottom: 40px;
+	right: 20px;
+	font-family: Tahoma, sans-serif;
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+}
+
+footer{
+	background-color: #9ADE7B;	
+	padding: 20px 20px;
+	height: 250px;
+	width: 100%;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.contact{
+	margin-top: 10px;
+	font-family: Tahoma, sans-serif;
+	color: white;
+	padding: 0 0;
+}
+
+.faq{
+	margin-top: -65px;
+	margin-left: 45%;
+	font-family: Tahoma, sans-serif;
+	color: white;
+	padding: 0 0;
+}
+
+</style>
+</head>
+
+<header>
+
+<nav>
+	<label class="logo"><a href="yerihyumi.html">Yerih Yumi Laundry Shop</a></label>
+	<ul>
+	    <li><a href="#lineabout">About</a></li>
+	    <li><a href="#lineservices">Services</a></li>
+	    <li><a href="#linecontact">FAQ</a></li>
+	</ul>
+</nav>
+
+</header>
+<body>
+<div class="flexcon">
+
+	<div class="leftcon">
+		<div class="cloud">
+			<img src="cloud.png" style="height:400px;">
+			<h1 style="color:#609966; position: absolute; top: 270px; padding-left: 200px; font-family: Tahoma, sans-serif; font-size: 35px;">VISIT US<br>NOW</h1>
+			<p style="color:#609966; position: absolute; top: 355px; padding-left: 200px; font-family: Tahoma, sans-serif; font-size: 15px">Simplify your laundry with Yerih Yumi!<br>
+			Register now in order to make an account for easy <br>
+			appointment scheduling of pick-up and delivery services.<br>
+			Experience convenience at its best - your time,<br> 
+			your clothes, our care.<br></p>
+		</div>
+		<div class="girl"><img src="girl.png" style="height:250px;"></div>
+		<div class="bubble"><img src="bubble.png" style="height:170px;"></div>
+	</div>
+	<div class="rightcon">
+		<div class="loginbox"> 
+		<h1><center>LOGIN ACCOUNT</center></h1>
+		<form action="login.php" method="post">
+		<div class="loginform">
+			<label>Username:</label><br>
+			<input type="text" id="username" name="username" required><br>
+			<label for="Password">Password:</label><br>
+			<input type="Password" id="password" name="password" required>
+			<center><input type="submit" id="submit" name="submit" value="sign in"></center>
+			<div class="create"><br><p style="font-size: 15px;">Doesn't have an account? 
+			
+				<a href="#lineabout">visit us to register</a></p>
+				<p><br><br><br><br><br><br><br><br></p>
+				<div class="admin"><a href="adminlogin.html"><center>LOGIN AS ADMIN</center></a></div>
+			
+			</div>
+		</div>
+		</form>
+		</div>
+	</div>
+
+
+</div>
+<div class="line" id="lineabout" ></div>
+<div class="about" style="background-color: #E8FFDF;">
+	<h1>ABOUT US</h1>
+	<p style="margin-bottom: 20px; font-size: 15px;">Yerih Yumi Laundry Shop was founded by Jaquelyn G. Benocilla
+	<br>on July 5, 2019. The shop currently operates with nine efficient machines. 
+	<br>We're legally registered with a Mayor's Permit, BIR taxpayer ID,
+	<br>and DTI business name registration for reliable and compliant service.</p>
+	<h1>ADDRESS</h1>
+	<p style="font-size: 15px;">Yerih Yumi Laundry Shop is located in 221 Patola St. brgy. BF International Village
+	<br> CAA. In order to reach the shop, from CAA road, you need to enter Green Revolution St.,
+	<br>which will lead you to the CAA Elementary School- Main. You then need to turn left
+	<br>and then right, and proceed directly straight forward intil you see phase 3 half-court.
+	<br>Yerih Yumi Laundry Shop can be found between phase 3 half-court and Nit's store.</p>
+	<img src="yerihbg.jpg" alt="Yerih Yumi" align="right" style="height:400px">
+</div>
+<div class="line" id="lineservices"></div>
+<label class="serv"><h1>SERVICES</h1></label>
+<div class="services">
+	<div class="flex-container">
+		<div><img src="wash.png" style="height: 250px;"><br><h3>WASH</h3></div>
+		<div><img src="dry.png" style="height: 250px;"><br><h3>WASH & DRY</h3></div>
+		<div><img src="fold.png" style="height: 250px;"><br><h3>WASH, DRY, & FOLD</h3></div> 
+	</div>
+</div>
+
+<div>
+	<a class="scroll" href="yerihyumi.html">^</a>
+</div>
+
+</body>
+<footer>
+
+	<div class="foot">
+		<div class="foots">
+			<div class="contact" id="linecontact">
+				<h2>Contact Us</h2>
+				<p style="font-size: 15px;">Smart: 0930-542-8291</p>
+				<p style="font-size: 15px;">Globe: 0995-045-6205</p>
+			</div>
+			<div class="faq">
+				<h2>FAQs</h2>
+				<p style="font-size: 15px; font-weight: bold;">How to register account?</p>
+				<p style="font-size: 15px;">In order to create an account, you need to go to the Yerih Yumi<br>
+				Laundry Shop and ask the staff or store manager to create<br>
+				an account for PUD appointment.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</html>

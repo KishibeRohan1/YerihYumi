@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <title>SMS Form</title> 
+<style>
+    *{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+
+}
+
+header{
+	font-family: Tahoma, sans-serif;
+}
+
+.list ul{
+	float: left;
+	list-style: none;
+
+}
+
+.list ul li{
+	display: inline-block;
+	line-height: 50px;
+	vertical-align: middle;
+	margin:0 10px;
+}
+
+label.logo{
+	color: white;
+	font-size: 30px;
+	line-height: 60px;
+	font-weight: bold;
+	margin: 0 20px;
+	
+}
+
+label.back a{
+	color: white;
+	background-color: #609966;
+	padding: 5px;
+	border-radius: 3px;
+	font-family: Tahoma, sans-serif;
+
+}
+
+nav {
+	background-color: #9ADE7B;
+	color: white;
+	padding: 10px 20px;
+	height: 80px;
+	width: 100%;
+    }
+
+.app h1{
+	font-family: Tahoma, sans-serif;
+  	color: #609966;
+
+}
+
+.notif-box{
+    background-color: #9ADE7B;
+	width: 350px; 
+	height: 300px;
+	border-radius: 5px;
+	margin-top: 85px;
+	margin-bottom: 0;
+	margin-right: 0;
+	margin-left: 450px;
+	filter: drop-shadow(5px 5px 15px #434242);
+}
+
+form{
+    margin-top: 10px;
+}
+
+.formbox{
+	font-size: 15px;
+	color: White; 
+	font-family: Tahoma, sans-serif;
+	padding: 20px;
+    font-weight: bold;
+}
+
+.notif-box input[type="text"] {
+	border: none;
+	border-bottom: 1.5px solid #609966;
+	background-color: transparent;
+	width: 100%;
+	align-items: center;
+	margin-top:0;
+	margin-bottom: 10px;
+	margin-right: 0;
+	margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#comments{
+	resize: none;
+    margin-top: 8px;
+	margin-bottom: -50px;
+
+}
+
+.notif-box input[type="submit"]{
+	height: 20px;
+	width: 50%;
+	background-color: #609966;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px;
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+.notif-box input[type="submit"]:hover{
+	opacity: 0.8;
+}
+
+</style>
+</head> 
+<header>
+	<nav>
+		<label class="logo">Yerih Yumi Laundry Shop</label>
+	</nav>
+</header>
+<body>
+	<div class="list">
+	<ul>
+		<li><label class="back"><a href="admin.html">back</a></label></li>
+		<li><label class="app"><h1>USERS ACCOUNTS</h1></label></li>
+	</ul>
+
+	</div>
+<body> 
+<div class="notif-box">
+    <div class="formbox">
+    <form action="notification.php" method="post"> 
+        <label for="phone">Phone Number:</label><br> 
+        <input type="text" id="phone" name="phone" required><br> 
+        <label for="message">Message:</label><br> <textarea id="comments" name="message"  rows="5" cols="39" required></textarea><br> 
+        <center><input type="submit" name="submit" value="Send SMS"></center>
+    </form> 
+    </div>
+</div>
+
+</body> 
+</html>

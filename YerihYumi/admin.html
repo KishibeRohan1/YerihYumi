@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<head>
+<title>Yerih Yumi Laundry- Admin</title>
+<style>
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+
+}
+
+header{
+	font-family: Tahoma, sans-serif;
+}
+
+
+label.logo{
+	color: white;
+	font-size: 30px;
+	line-height: 60px;
+	font-weight: bold;
+	margin: 0 20px;
+	
+}
+
+label.logo a{
+	color: white;
+}
+
+label.reg a{
+	color: white;
+	background-color: #609966;
+	padding: 7px;
+	border-radius: 3px;
+	font-family: Tahoma, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 11px;
+	float: right;
+}
+
+nav {
+	background-color: #9ADE7B;
+	color: white;
+	padding: 10px 20px;
+	height: 80px;
+	width: 100%;
+    }
+
+
+
+.flex-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+    margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 0px;
+}
+
+.flex-container > div{
+  	background-color: #F1F1F1;
+  	border-radius: 30px;
+  	padding: -20px;
+  	width: 50%;
+	margin: 20px;
+  	text-align: center;
+  	line-height: 75px;
+	transition: transform .2s;
+}
+
+.flex-con > div{
+    background-color: #F1F1F1;
+  	border-radius: 30px;
+  	padding: -20px;
+  	width: 50%;
+	margin: 20px;
+  	text-align: center;
+  	line-height: 70px;
+	transition: transform .2s;
+}
+
+.flex-container > div:hover{
+	transform: scale(1.05);
+}
+
+.flex-container > div h3{
+	margin-top: -70px;
+	font-size: 25px;
+  	font-family: Tahoma, sans-serif;
+  	color: #609966;
+}
+
+.flex-con{
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+    margin-top: 0;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 0px;
+}
+
+.flex-con > div{
+    background-color: #F1F1F1;
+  	border-radius: 30px;
+  	padding: -20px;
+  	width: 50%;
+	margin: 20px;
+  	text-align: center;
+  	line-height: 75px;
+	transition: transform .2s;
+}
+
+.flex-con > div:hover{
+	transform: scale(1.05);
+}
+
+.flex-con > div h3{
+	margin-top: -70px;
+	font-size: 25px;
+  	font-family: Tahoma, sans-serif;
+  	color: #609966;
+}
+
+</style>
+</head>
+<header>
+	<nav>
+		<label class="logo">Yerih Yumi Laundry Shop</label>
+		<label class="reg"><a href="registration.html">REGISTER</a></label>
+	</nav>
+</header>
+<body>
+
+    <div class="services">
+        <div class="flex-container">
+            <div onClick="document.location='accounts.php'"><img src="useraccounts.png" style="height: 200px;"><br><h3>USER ACCOUNTS</h3></div>
+            <div onClick="document.location='userappointment.php'"><img src="appointment.png" style="height: 200px;"><br><h3>APPOINTMENTS</h3></div>
+            <div onClick="document.location='fordelivery.php'"><img src="delivery.png" style="height: 200px;"><br><h3>FOR DELIVERY</h3></div> 
+        </div>
+    </div>
+    <div class="services">
+        <div class="flex-con">
+            <div onClick="document.location='sales.php'"><img src="sales.png" style="height: 200px;"><br><h3>SALES</h3></div>
+            <div onClick="document.location='notification.html'"><img src="notification.png" style="height: 200px;"><br><h3>NOTIFICATIONS</h3></div>
+            <div onClick="document.location='yerihyumi.html'"><img src="logout.png" style="height: 200px;"><br><h3>LOGOUT</h3></div> 
+        </div>
+    </div>
+
+
+</body>
+<footer>
+</footer>
+</HTML>
